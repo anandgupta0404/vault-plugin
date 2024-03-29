@@ -1,0 +1,26 @@
+time="2024-03-16T06:02:19Z" level=info msg="ArgoCD Repository Server is starting" built="2023-12-01T23:05:50Z" commit=6eba5be864b7e031871ed7698f5233336dfe75c7 port=8081 version=v2.9.3+6eba5be
+time="2024-03-16T06:02:19Z" level=info msg="Generating self-signed TLS certificate for this session"
+time="2024-03-16T06:02:19Z" level=info msg="Initializing GnuPG keyring at /app/config/gpg/keys"
+time="2024-03-16T06:02:19Z" level=info msg="gpg --no-permission-warning --logger-fd 1 --batch --gen-key /tmp/gpg-key-recipe2591662410" dir= execID=26aee
+time="2024-03-16T06:02:19Z" level=info msg=Trace args="[gpg --no-permission-warning --logger-fd 1 --batch --gen-key /tmp/gpg-key-recipe2591662410]" dir= operation_name="exec gpg" time_ms=95.796108
+time="2024-03-16T06:02:19Z" level=info msg="Populating GnuPG keyring with keys from /app/config/gpg/source"
+time="2024-03-16T06:02:19Z" level=info msg="gpg --no-permission-warning --list-public-keys" dir= execID=90555
+time="2024-03-16T06:02:19Z" level=info msg=Trace args="[gpg --no-permission-warning --list-public-keys]" dir= operation_name="exec gpg" time_ms=1.207396
+time="2024-03-16T06:02:19Z" level=info msg="gpg --no-permission-warning -a --export F2C1A169AB95FF36" dir= execID=7bf3c
+time="2024-03-16T06:02:19Z" level=info msg=Trace args="[gpg --no-permission-warning -a --export F2C1A169AB95FF36]" dir= operation_name="exec gpg" time_ms=1.038607
+time="2024-03-16T06:02:19Z" level=info msg="gpg-wrapper.sh --no-permission-warning --list-secret-keys F2C1A169AB95FF36" dir= execID=0a22b
+time="2024-03-16T06:02:19Z" level=info msg=Trace args="[gpg-wrapper.sh --no-permission-warning --list-secret-keys F2C1A169AB95FF36]" dir= operation_name="exec gpg-wrapper.sh" time_ms=1.734221
+time="2024-03-16T06:02:19Z" level=info msg="Loaded 0 (and removed 0) keys from keyring"
+time="2024-03-16T06:02:19Z" level=info msg="argocd-repo-server is listening on [::]:8081"
+time="2024-03-16T06:02:19Z" level=info msg="Starting GPG sync watcher on directory '/app/config/gpg/source'"
+time="2024-03-16T06:02:45Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=TestRepository grpc.service=repository.RepoServerService grpc.start_time="2024-03-16T06:02:45Z" grpc.time_ms=333.386 span.kind=server system=grpc
+time="2024-03-16T06:03:10Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:03:10Z" grpc.time_ms=0.071 span.kind=server system=grpc
+time="2024-03-16T06:03:12Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=ListPlugins grpc.service=repository.RepoServerService grpc.start_time="2024-03-16T06:03:12Z" grpc.time_ms=0.266 span.kind=server system=grpc
+time="2024-03-16T06:03:31Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=ListPlugins grpc.service=repository.RepoServerService grpc.start_time="2024-03-16T06:03:31Z" grpc.time_ms=0.153 span.kind=server system=grpc
+time="2024-03-16T06:03:40Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:03:40Z" grpc.time_ms=0.161 span.kind=server system=grpc
+time="2024-03-16T06:03:52Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=ListPlugins grpc.service=repository.RepoServerService grpc.start_time="2024-03-16T06:03:52Z" grpc.time_ms=0.408 span.kind=server system=grpc
+time="2024-03-16T06:04:10Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:04:10Z" grpc.time_ms=0.055 span.kind=server system=grpc
+time="2024-03-16T06:04:40Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:04:40Z" grpc.time_ms=0.067 span.kind=server system=grpc
+time="2024-03-16T06:05:10Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:05:10Z" grpc.time_ms=0.088 span.kind=server system=grpc
+time="2024-03-16T06:05:40Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:05:40Z" grpc.time_ms=0.038 span.kind=server system=grpc
+time="2024-03-16T06:06:10Z" level=info msg="finished unary call with code OK" grpc.code=OK grpc.method=Check grpc.service=grpc.health.v1.Health grpc.start_time="2024-03-16T06:06:10Z" grpc.time_ms=0.253 span.kind=server system=grpc
